@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('tests') {
       steps {
-        sh 'cmake test'
+        sh 'make test'
       }
     }
     stage('run') {
       steps {
-        sh 'cmake'
+        sh 'make'
       }
     }
   }
