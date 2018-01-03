@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('tests') {
       steps {
-        sh 'make test'
+        sh '''ls -la .
+make test'''
       }
     }
     stage('run') {
