@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('lsss') {
+    stage('tests') {
       steps {
-        echo 'eefwefwe'
+        sh 'make test'
+      }
+    }
+    stage('run') {
+      steps {
+        sh 'make'
       }
     }
   }
