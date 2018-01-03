@@ -6,9 +6,9 @@ pipeline {
         sh 'make test'
       }
     }
-    stage('run') {
+    stage('build') {
       steps {
-        sh 'make'
+        sh 'make build'
         archiveArtifacts(artifacts: 'main', caseSensitive: true, fingerprint: true, onlyIfSuccessful: true)
       }
     }
