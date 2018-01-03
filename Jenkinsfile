@@ -9,6 +9,7 @@ pipeline {
     stage('run') {
       steps {
         sh 'make'
+        archiveArtifacts(artifacts: 'main', caseSensitive: true, fingerprint: true, onlyIfSuccessful: true)
       }
     }
   }
