@@ -7,8 +7,9 @@ docker ps
 docker exec -ti ..CONTAINER ID\NAMES.. bash
 apk add make go gcc g++
 ```
-#### build \ run \ test - golang with Makefile:
+#### run \ build  \ test - golang with Makefile:
 ```shell
-make run \ make
+make (defaul, make run)
+make build
 make test
 ```
